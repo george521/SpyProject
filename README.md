@@ -102,9 +102,15 @@ POST /api/spies/list
 Query Parameters:
 
 fetch: Page number for pagination
+
 sort: array of values (fullname, date_of_birth, date_of_death)
+
 filters: array of values (name or surname, exact_age or range_age)
+
 if filters array has name need to pass name
+
 if filters array has surname need to pass surname
+
 if filters array has exact_age need to pass age
+
 if filters array has range_age need to pass from and to
