@@ -114,3 +114,12 @@ if filters array has surname need to pass surname
 if filters array has exact_age need to pass age
 
 if filters array has range_age need to pass from and to
+
+Testing
+This project follows Test-Driven Development (TDD). Unit and feature tests are written using PHPUnit.
+
+To run the tests:
+
+bash
+php artisan test
+Tests are located in the tests/ directory.
