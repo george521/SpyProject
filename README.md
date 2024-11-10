@@ -98,7 +98,9 @@ json
 
 3. List Paginated Spies
 POST /api/spies/list
+
 Query Parameters:
+
 fetch: Page number for pagination
 sort: array of values (fullname, date_of_birth, date_of_death)
 filters: array of values (name or surname, exact_age or range_age)
