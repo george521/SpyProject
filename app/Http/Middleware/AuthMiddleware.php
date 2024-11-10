@@ -17,15 +17,9 @@ class AuthMiddleware
      */
     public function handle(Request $request, Closure $next): Response
     {
-        $users = User::where('name', $request->input('username'))->get();
-        foreach ($users as $user){
-            $check = Hash::check( $request->input('password'), $user->password);
-            if($check){
-                $found = $user;
-                break;
-            }
-        }
-        if(!isset($found)){
+        $users = User::where('name', $request->input('username'))->first();
+
+        if($users){
             return \response()->json(['message' => 'Wrong user!'], 500);
         }
 
