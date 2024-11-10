@@ -23,4 +23,15 @@ class SpyController
         }
         return response()->json($spy, 201);
     }
+
+    public function random(Request $request){
+        try {
+            $spies = SpyModel::inRandomOrder()->limit(5)->get();
+        }catch (\Exception $ex){
+            return response()->json($ex->getMessage(), 500);
+
+        }
+        return response()->json($spies, 200);
+    }
+
 }
