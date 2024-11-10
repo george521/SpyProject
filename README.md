@@ -8,8 +8,8 @@ MySQL
 Step 1: Clone the Repository
 bash
 Αντιγραφή κώδικα
-git clone https://github.com/george521/SpeProject.git
-cd famous-spies-api
+git clone https://github.com/george521/SpyProject.git
+cd SpyProject
 Step 2: Install PHP Dependencies
 Run composer install to install the necessary PHP packages:
 
